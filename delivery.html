@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>delivery</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="popup">
+            <div class=" popups-forma__box">
+                <div class=" popup-forma__wrap popup-forma__exit-wrap">
+                    <button class="popup__cross"><img src="images/cross.svg" alt="cross"></button>
+                    <form class="popup-forma__exit" >
+                        <h2 class="popup-forma__title">Вход</h2>
+                        <p class="popup-forma__text">Пожалуйста, введите ваш e-mail и пароль для входа</p>
+                        <div class="popup-forma__inner">
+                            <div class="forma-input__wrap popup-input__wrap">
+                                <h3 class="forma-input__title">E-mail</h3>
+                                <input class="forma-input" type="email">
+                            </div>
+                            <div class="forma-input__wrap popup-input__wrap">
+                                <h3 class="forma-input__title" >Пароль</h3>
+                                <input class="forma-input " type="password" placeholder="Пароль">
+                                <div class="form-btn__eye"></div>
+                            </div>
+                        </div>
+                        
+                            <button class="popup-forma__btn btn">войти</button>
+                        <div class="popup-forma__bottom">
+                            <span class="popup-forma__descr">Еще не зарегестрированы?</span>
+                            <button class="popup__btn regist-btn" type="button">Регистрация зесь</button>
+                        </div>
+                       
+                        
+                        
+                    </form>
+                </div>
+
+                <div class="popup-forma__wrap popup-forma__regist-wrap hide">
+                    <button class="popup__cross"><img src="images/cross.svg" alt="cross"></button>
+                    <form class="popup-forma__regist" >
+                        <h2 class="popup-forma__title">Регистрация</h2>
+                        <p class="popup-forma__text">Пожалуйста, введите e-mail и пароль для регистрации</p>
+                        <div class="popup-forma__inner">
+                            <div class="forma-input__wrap popup-input__wrap">
+                                <h3 class="forma-input__title">E-mail</h3>
+                                <input class="forma-input" type="Ваш email">
+                            </div>
+                            <div class="forma-input__wrap popup-input__wrap">
+                                <h3 class="forma-input__title" >Пароль</h3>
+                                <input class="forma-input " type="password" placeholder="Ваш пароль">
+                                <div class="form-btn__eye"></div>
+                            </div>
+                            <div class="forma-input__wrap popup-input__wrap">
+                                <h3 class="forma-input__title" >Повторить пароль</h3>
+                                <input class="forma-input " type="password" placeholder="Повторить пароль">
+                                <div class="form-btn__eye"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="checkbox__wrap popup-forma__checkbox">
+                                    
+                            <label class="checkbox__text">
+                                <input class="checkbox" type="checkbox" >
+                                <span class="fake-checkbox"></span>
+                                <span>Я согласен с </span>
+                                <a class="checkbox__link" href="#">Политикой обработки персональных данных.</a>
+                            </label>
+                        </div>
+                        <button class="popup-forma__btn btn">Зарегистрироваться</button>
+                        <div class="popup-forma__bottom">
+                            <span class="popup-forma__descr">У меня уже есть аккаунт.</span>
+                            <button class="popup__btn exit-btn " type="button">Войти</button>
+                        </div>
+                        
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+        <div class="popup-two  hide ">
+            <div class="popup-forma__wrap popup-forma__check-wrap ">
+                <button class="popup__cross"><img src="images/cross.svg" alt="cross"></button>
+                <form class="popup-forma popup-forma__check" >
+                    <h2 class="popup-forma__title">Регистрация</h2>
+                    <img class="popup-forma__img" src="images/check-big.svg">
+                    <p class="popup-forma__text">
+                        Регистрация прошла успешно.Мы выслали вам на почту письмо со ссылкой подтверждением.
+                    </p>
+                    
+                    <button class="popup-forma__btn btn">на главную</button>
+                    
+                    
+                </form>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__inner">
+                <div class="burger-menu">
+                    <div class="burger-menu__cross"><img src="images/cross.svg" alt="cross"></div>
+                    <div class="burger-menu__item">
+                        <div class="burger-menu__title">одежда</div>
+                        <ul class="burger-menu__list">
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Майки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Топы</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Брюки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Шорты</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu__item">
+                        <div class="burger-menu__title">купальники</div>
+                        <ul class="burger-menu__list">
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Майки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Топы</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Брюки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Шорты</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu__item">
+                        <div class="burger-menu__title">нижнее бельё</div>
+                        <ul class="burger-menu__list">
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Майки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Топы</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Брюки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Шорты</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu__item">
+                        <div class="burger-menu__title">Новые поступления</div>
+                        <ul class="burger-menu__list">
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Майки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Топы</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Брюки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Шорты</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu__item">
+                        <div class="burger-menu__title">SALE</div>
+                        <ul class="burger-menu__list">
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Майки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Топы</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Брюки</a></li>
+                            <li class="burger-menu__list-item"><a class="burger-menu__list-link" href="#">Шорты</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu__item burger-menu__item-bottom">
+                        <div class="burger-menu__box">
+                            <div class="sale">sale%</div>
+                            <img src="images/burger-img.jpg" alt="img">
+                        </div>
+                        <p class="burger-menu__text">Распродажа % Успей купить сегодня</p>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <div class="burger-btn"></div>
+                    
+                    <ul class="header__menu">
+                        
+                        <li class="header__menu-item">
+                            <span>одежд</span>
+                            <ul class="menu-inner">
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">майки</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">брюки</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">топы</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">шорты</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="header__menu-item">
+                            <span>купальники</span>
+                            <ul class="menu-inner">
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">майки</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">брюки</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">топы</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">шорты</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item">
+                            <span>нижнее бельё</span>
+                            <ul class="menu-inner">
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">майки</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">брюки</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">топы</a></li>
+                                <li class="menu-inner__item"><a class="header__menu-link" href="#">шорты</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                   
+                    
+                    <div class="header-box">
+                        <a class="logo" href="index.html"><img class="logo__img" src="images/logo.svg" alt="logo"></a>
+                        <div class="search-wrap">
+                            <div class="search-box hide">
+                                <input class="search" type="search" placeholder="Поиск">
+                                
+                            </div>
+                            
+                            <button class="search-btn"><svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_207_939)">
+                                <path d="M11.2726 21.75C16.7954 21.75 21.2726 17.2728 21.2726 11.75C21.2726 6.22715 16.7954 1.75 11.2726 1.75C5.74974 1.75 1.27258 6.22715 1.27258 11.75C1.27258 17.2728 5.74974 21.75 11.2726 21.75Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.1361 24.4375L18.9993 19" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_207_939">
+                                <rect width="27" height="26" fill="white" transform="translate(-0.000732422)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <ul class="header__icons">
+                        <li class="header__icons-item heart"><a class="header__icons-link" href="favourites.html"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.0497 5.76283C25.4112 5.12408 24.6532 4.61739 23.8189 4.27168C22.9845 3.92598 22.0903 3.74805 21.1872 3.74805C20.2841 3.74805 19.3898 3.92598 18.5555 4.27168C17.7211 4.61739 16.9631 5.12408 16.3247 5.76283L14.9997 7.08783L13.6747 5.76283C12.385 4.47321 10.636 3.74872 8.81216 3.74872C6.98837 3.74872 5.23928 4.47321 3.94966 5.76283C2.66005 7.05244 1.93555 8.80154 1.93555 10.6253C1.93555 12.4491 2.66005 14.1982 3.94966 15.4878L5.27466 16.8128L14.9997 26.5378L24.7247 16.8128L26.0497 15.4878C26.6884 14.8494 27.1951 14.0913 27.5408 13.257C27.8865 12.4227 28.0644 11.5284 28.0644 10.6253C28.0644 9.72222 27.8865 8.82796 27.5408 7.99363C27.1951 7.15931 26.6884 6.40127 26.0497 5.76283V5.76283Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </a></li>
+                        <li class="header__icons-item account"><button class="header__icons-btn" type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.33398 25.4615C4.33398 21.3406 7.67463 18 11.7955 18H17.8724C21.9933 18 25.334 21.3406 25.334 25.4615C25.334 26.3112 24.6452 27 23.7955 27H5.87245C5.02278 27 4.33398 26.3112 4.33398 25.4615Z" stroke="#292929" stroke-width="2"/>
+                                <circle cx="14.834" cy="8.5" r="5.5" stroke="#292929" stroke-width="2"/>
+                                </svg>
+                                
+                            </button></li>
+                        <li class="header__icons-item cart">
+                            <a class=" header-icons__link-active" href="cart">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.75 7.5H26.25" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <!-- hide -->   
+                            <span class="cart-count__wrap">( <span class="cart-count">2</span>)</span>     
+                            </a>
+                            <a class=" header-icons__link-hide" href="cart">
+                                <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_18759)">
+                                    <path d="M4.09251 4.72656L1.36523 8.36293V21.0902C1.36523 21.5724 1.55679 22.0349 1.89777 22.3758C2.23874 22.7168 2.7012 22.9084 3.18342 22.9084H15.9107C16.3929 22.9084 16.8554 22.7168 17.1963 22.3758C17.5373 22.0349 17.7289 21.5724 17.7289 21.0902V8.36293L15.0016 4.72656H4.09251Z" stroke="#292929" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.1809 4.72656C13.1809 3.76214 12.7978 2.83722 12.1159 2.15526C11.4339 1.47331 10.509 1.0902 9.54457 1.0902C8.58014 1.0902 7.65522 1.47331 6.97327 2.15526C6.29132 2.83722 5.9082 3.76214 5.9082 4.72656" stroke="#292929" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.46995 19V18.388L9.96195 14.968C10.282 14.656 10.522 14.384 10.682 14.152C10.842 13.912 10.95 13.688 11.006 13.48C11.062 13.272 11.09 13.076 11.09 12.892C11.09 12.404 10.922 12.02 10.586 11.74C10.258 11.46 9.76995 11.32 9.12195 11.32C8.62595 11.32 8.18595 11.396 7.80195 11.548C7.42595 11.7 7.10195 11.936 6.82995 12.256L6.21795 11.728C6.54595 11.344 6.96595 11.048 7.47795 10.84C7.98995 10.632 8.56195 10.528 9.19395 10.528C9.76195 10.528 10.254 10.62 10.67 10.804C11.086 10.98 11.406 11.24 11.63 11.584C11.862 11.928 11.978 12.332 11.978 12.796C11.978 13.068 11.938 13.336 11.858 13.6C11.786 13.864 11.65 14.144 11.45 14.44C11.258 14.728 10.974 15.056 10.598 15.424L7.39395 18.568L7.15395 18.232H12.362V19H6.46995Z" fill="#292929"/>
+                                    <path d="M1.36523 8.36328H17.7289" stroke="#292929" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_18759">
+                                    <rect width="18.9091" height="24" fill="white" transform="translate(0.0917969)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+       
+        <div class="header__discount-box">
+            <div class="discount">
+                <p class="discount__text">Скидка 20% </p>
+            </div>
+            <div class="discount-text__wrap">
+                <p class="discount-text">Подпишитесь на нашу рассылку и получите дополнительную скидку 20%! </p>
+                <a class="discount-box__link" href="#">Подпишитесь прямо сейчас</a>
+            </div>
+           
+        </div>
+           
+           
+        </header>
+        <div class="main">
+            <section class="delivery page-section">
+                <div class="container">
+                    <div class="breadcrumbs-box">
+                        <div class="container">
+                            <div class="breadcrumbs-box__inner">
+                                <ul class="breadcrumbs">
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="index.html">Главная</a></li>
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__item-link breadcrumbs-active" href="#">Доставка и оплата</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery__inner page-section__inner">
+                        <div class="page-section__content">
+                            <h1 class="page-section__title title">Доставка и оплата</h1>
+                            <div class="page-section__list-wrap">
+                                <h3 class="page-section__list-title">В интернет - магазине LUIZABELLEZZA, доступны следующие виды доставок:</h3>
+                                <ul class="page-section__list">
+                                    <li class="page-section__list-item">Самовывоз из магазина</li>
+                                    <li class="page-section__list-item">СДЭК</li>
+                                </ul>
+                                <button class="page-section__btn btn">вернуться к покупкам</button>
+                            </div>
+                        </div>
+                        <div class="page-section__item">
+                            <img src="images/page-image.jpg" alt="img">
+                            <img class="page-section__img-hide" src="images/image-hide.jpg" alt="img">
+                            <div class="page-section__item-box">
+                                <p class="page-section__item-supertext">В ТРЕНДЕ</p>
+                                <h2 class="page-section__item-title">Только новинки</h2>
+                                <a class="page-section__item-link link" href="#">Купить первой</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__inner">
+                <nav class="footer__nav">
+                    <div class="footer__item footer__item-left">
+                        <a class="footer__logo-link" href="#"><img class="footer__logo-img" src="images/logo-footer.svg" alt="logo"></a>
+                        <ul class="social__list">
+                            <li class="social__list-item"><a class="social__list-link" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.667 2.6665H9.33366C5.65176 2.6665 2.66699 5.65127 2.66699 9.33317V22.6665C2.66699 26.3484 5.65176 29.3332 9.33366 29.3332H22.667C26.3489 29.3332 29.3337 26.3484 29.3337 22.6665V9.33317C29.3337 5.65127 26.3489 2.6665 22.667 2.6665Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.3336 15.16C21.4981 16.2696 21.3086 17.4029 20.7919 18.3987C20.2753 19.3944 19.4578 20.2019 18.4558 20.7062C17.4537 21.2106 16.3182 21.3861 15.2106 21.2079C14.1031 21.0297 13.0799 20.5068 12.2867 19.7135C11.4935 18.9203 10.9706 17.8971 10.7924 16.7896C10.6141 15.682 10.7897 14.5465 11.294 13.5445C11.7984 12.5424 12.6058 11.725 13.6016 11.2083C14.5973 10.6916 15.7306 10.5021 16.8403 10.6666C17.9722 10.8345 19.0201 11.3619 19.8292 12.171C20.6383 12.9802 21.1657 14.0281 21.3336 15.16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.333 8.6665H23.3463" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a></li>
+                            <li class="social__list-item"><a class="social__list-link" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.9997 2.6665H19.9997C18.2316 2.6665 16.5359 3.36888 15.2856 4.61913C14.0354 5.86937 13.333 7.56506 13.333 9.33317V13.3332H9.33301V18.6665H13.333V29.3332H18.6663V18.6665H22.6663L23.9997 13.3332H18.6663V9.33317C18.6663 8.97955 18.8068 8.64041 19.0569 8.39036C19.3069 8.14031 19.6461 7.99984 19.9997 7.99984H23.9997V2.6665Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a></li>
+                            <li class="social__list-item"><a class="social__list-link" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.0538 8.56016C29.8954 7.92738 29.5728 7.34759 29.1186 6.87937C28.6645 6.41115 28.0948 6.07108 27.4671 5.8935C25.1738 5.3335 16.0004 5.3335 16.0004 5.3335C16.0004 5.3335 6.8271 5.3335 4.53377 5.94683C3.9061 6.12441 3.33641 6.46448 2.88223 6.9327C2.42806 7.40092 2.10549 7.98071 1.9471 8.6135C1.52739 10.9409 1.32208 13.3019 1.33377 15.6668C1.31881 18.0496 1.52413 20.4286 1.9471 22.7735C2.12172 23.3866 2.45151 23.9444 2.90463 24.3928C3.35774 24.8412 3.91886 25.1652 4.53377 25.3335C6.8271 25.9468 16.0004 25.9468 16.0004 25.9468C16.0004 25.9468 25.1738 25.9468 27.4671 25.3335C28.0948 25.1559 28.6645 24.8158 29.1186 24.3476C29.5728 23.8794 29.8954 23.2996 30.0538 22.6668C30.4702 20.3569 30.6755 18.0139 30.6671 15.6668C30.6821 13.2841 30.4767 10.9051 30.0538 8.56016V8.56016Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 20.0266L20.6667 15.6666L13 11.3066V20.0266Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__item-right">
+                        <div class="footer__list-wrap">
+                            <h3 class="footer__list-title">Гид по покупкам</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a class="footer__list-link" href="catalog.html">Каталог товаров</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="table.html">Таблица размеров</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="placing.html">Оплата товара</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="delivery.html">Доставка и примерка</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="exchange.html">Обмен и возврат</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__list-wrap">
+                            <h3 class="footer__list-title">О компании</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a class="footer__list-link" href="about.html">О компании</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="contacts.html">Контакты</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="support.html">Служба поддержки</a></li>
+                               
+                            </ul>
+                        </div>
+
+                        <div class="footer__list-wrap">
+                            <h3 class="footer__list-title">Юридическая информация</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a class="footer__list-link" href="privacy.html">Политика конфеденциальности</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="offer.html">Публичная оферта</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="useragreement.html">Пользовательское соглашение</a></li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </nav>
+                <span class="footer-copy">© 2024 LUIZABELLEZA</span>
+            </div>
+          </div>
+        </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>    
+</body>
+</html>
